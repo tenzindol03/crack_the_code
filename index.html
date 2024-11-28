@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Crack the Code!</title>
+  <link href="https://fonts.googleapis.com/css2?family=Barrio&family=DotGothic16&family=Monoton&family=Roboto:wght@300;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <div class="container">
+    <h1>Crack the Code!</h1>
+    <p class="description">Guess the word from the scrambled letters</p>
+
+    <!-- Select Subject -->
+    <div id="subject-select">
+      <label for="subject">Choose a subject:</label>
+      <select id="subject">
+        <option value="finance-banking">Finance & Banking</option>
+        <option value="software-development">Software Development</option>
+        <option value="technology">Technology</option>
+      </select>
+      <button id="start-btn">Start Game</button>
+    </div>
+
+    <!-- Display scrambled word -->
+    <div id="game-area" style="display: none;">
+      <h2 id="scrambled-word">BUDGTE</h2>
+      <p>Pick the letters:</p>
+      <div id="letter-options"></div>
+      <input type="text" id="guess-input" placeholder="Your guess...">
+      <button id="submit-btn">Submit</button>
+    </div>
+
+    <!-- Feedback for user -->
+    <p id="feedback"></p>
+
+    <!-- Score and Timer -->
+    <div id="stats">
+      <p>Score: <span id="score">0</span></p>
+      <p>Time Left: <span id="timer">60</span>s</p>
+    </div>
+
+    <!-- Play Again -->
+    <button id="restart-btn">Play Again </button>
+  </div>
+</body>
+</html>

@@ -1,0 +1,113 @@
+/* Use Barrio for paragraph text */
+p {
+  font-family: 'Barrio', cursive;
+  font-size: 1.2rem;
+  line-height: 1.5;
+}
+
+/* Use Monoton for h1 */
+h1 {
+  font-family: 'Monoton', cursive;
+  font-size: 3rem;
+  text-transform: uppercase;
+  color: #ba3ae4;
+  letter-spacing: 3px;
+  margin-bottom: 20px;
+}
+
+/* Use DotGothic16 for h2 */
+h2 {
+  font-family: 'DotGothic16', sans-serif;
+  font-size: 2rem;
+  text-transform: uppercase;
+  color: #333;
+  margin-bottom: 20px;
+  letter-spacing: 8px;
+}
+
+/* Use Roboto for the rest of the elements (inputs, buttons) */
+input, button {
+  font-family: 'Roboto', sans-serif;
+  font-weight: 500;
+  font-size: 1rem;
+  color: #333;
+}
+
+button {
+  background: #ba3ae4
+  border: none;
+  border-radius: 5px;
+  padding: 10px 20px;
+  cursor: pointer;
+}
+
+button:hover {
+  background: hsl(311, 92%, 69%);
+}
+
+input {
+  border: 1px solid #ba3ae4;
+  border-radius: 5px;
+  padding: 10px;
+  margin-bottom: 10px;
+}
+
+/* Add general styles for body and container */
+body {
+  font-family: 'Roboto', sans-serif;
+  text-align: center;
+  background-color: hsl(311, 92%, 69%);
+  color: #333;
+  margin: 0;
+  padding: 20px;
+}
+
+.container {
+  max-width: 600px;
+  margin: auto;
+  padding: 20px;
+  border-radius: 10px;
+  background: #fbefef;
+  box-shadow: 0 8px 16px #ba3ae4;
+}
+
+/* Style the dropdown */
+select {
+  background-color: #ba3ae4;
+  color: white; 
+  font-family: 'Roboto', sans-serif;
+  font-size: 1rem;
+  padding: 10px;
+  border: none;
+  border-radius: 5px; 
+  cursor: pointer; 
+}
+
+/* Style for hover */
+select:hover {
+  background-color: hsl(311, 92%, 69%); /* Slightly darker green */
+}
+
+#restart-btn {
+  display: none; /* Initially hidden */
+  background: #ba3ae4;
+  color: white;
+  font-family: 'Roboto', sans-serif;
+  font-size: 1.2rem;
+  padding: 15px 30px;
+  border: #333;
+  border-radius: 5px;
+  cursor: pointer;
+  margin: auto; /* Center horizontally */
+}
+
+#restart-btn:hover {
+  background: hsl(311, 92%, 69%);
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
